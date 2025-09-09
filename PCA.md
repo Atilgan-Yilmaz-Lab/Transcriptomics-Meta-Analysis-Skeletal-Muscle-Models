@@ -65,7 +65,10 @@ samplelabels1 <- colnames(log2.cpm_MT1.filt.norm)
 distance <- dist(t(log2.cpm_MT1.filt.norm), method = "euclidean") 
 clusters <- hclust(distance, method = "average")
 plot(clusters, labels=samplelabels1, cex = 0.3)
-    
+```
+![Hierarchical cluster](/Images/output_16_0.png)
+
+```R    
 #Principal component analysis of cpm filtered
 pca.res <- prcomp(t(log2.cpm_MT1.filt.norm), scale.=F, retx=T)
 summary(pca.res)
@@ -75,7 +78,10 @@ pc.var<-pca.res$sdev^2
 pc.per<-round(pc.var/sum(pc.var)*100, 1)
 pc.per
 pca.res.df <- as_tibble(pca.res$x)
-    
+```
+![PCA RES](/Images/output_17_2.png)
+
+```R  
 #PCA without labels
 ggplot(pca.res.df) +
   aes(x=PC1, y=PC2, color=groupMT1) +
@@ -86,7 +92,10 @@ ggplot(pca.res.df) +
        caption=paste0("produced on ", Sys.time())) +
   coord_fixed() +
   theme_classic()
+```
+![PCA 1](/Images/output_18_0.png)
 
+```R  
 #PCA with labels
 ggplot(pca.res.df) +
   aes(x = PC1, y = PC2, color = groupMT1, label = samplelabels1) +
@@ -99,3 +108,5 @@ ggplot(pca.res.df) +
   coord_fixed() +
   theme_classic()
 ```
+![PCA 2](/Images/output_19_0.png)
+
