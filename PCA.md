@@ -67,7 +67,7 @@ clusters <- hclust(distance, method = "average")
 plot(clusters, labels=samplelabels1, cex = 0.3)
 ```
 
-![png](output_16_0.png)
+![cluster tree](png link 16?)
     
 
 ```R
@@ -82,7 +82,7 @@ pc.per
 pca.res.df <- as_tibble(pca.res$x)
 ```
     
-![png](output_17_2.png)
+![pca.res](png link 17.2)
     
 
 ```R
@@ -98,7 +98,7 @@ ggplot(pca.res.df) +
   theme_classic()
 ```
     
-![png](output_18_0.png)
+![PCA1](output_18_0.png)
     
 
 ```R
@@ -115,4 +115,4 @@ ggplot(pca.res.df) +
   theme_classic()
 ```
     
-![png](output_19_0.png)
+![PCA2](output_19_0.png)
