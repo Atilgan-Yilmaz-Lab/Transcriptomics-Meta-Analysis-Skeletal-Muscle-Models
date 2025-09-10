@@ -297,11 +297,7 @@ medianPCtpassing
        x = "% of Samples Passing", y = "Density") +
   theme_minimal()
 1Combined_density
-```    
 
-![png](output_17_0.png)
-    
-```R
 # combined table ECDF
 1Combined_ecdf <- ggplot(1Combined_pct, aes(x = PctSamplesPassing)) +
   stat_ecdf(geom = "step", color = "darkgreen", size = 1) +
@@ -309,11 +305,7 @@ medianPCtpassing
        x = "% of Samples Passing", y = "Cumulative Proportion of Genes") +
   theme_minimal()
 1Combined_ecdf
-``` 
-    
-![png](output_18_0.png)
-    
-```R 
+
 # Repeat the cpm <1 threshold but this time for the in vivo samples
 2DMP_AMP_pct <- DMP_AMP %>%
   rowwise() %>%
