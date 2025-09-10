@@ -1,4 +1,4 @@
-#PCA of all samples (source material, in vitro skeletal muscle samples and reference skeletal muscle samples)
+# PCA of all samples (source material, in vitro skeletal muscle samples and reference skeletal muscle samples)
 
 ```R
 #set working directory
