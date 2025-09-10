@@ -1,6 +1,6 @@
-```R
-# This workbook calculates the percentages of genes passing the appropriate cpm filters cpm >5 and cpm <1. Apply both filters separately to gneerate 2 combined ECDF plots which can be found in supplementary figure 1D and E
 
+### This workbook calculates the percentages of genes passing the appropriate cpm filters cpm >5 and cpm <1. Apply both filters separately to gneerate 2 combined ECDF plots which can be found in supplementary figure 1D and E
+```R
 # set working directory
 setwd("/staging/leuven/stg_00134/Margaux/Revision/BatchCorrection/D1")
 
