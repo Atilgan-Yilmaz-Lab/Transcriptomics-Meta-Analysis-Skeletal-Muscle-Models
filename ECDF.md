@@ -598,4 +598,4 @@ Combined_ECDFD1_2 <- ggplot(Combined1_2, aes(x = PctSamplesPassing)) +
   theme_minimal()
 Combined_ECDFD1_2
 ```
-[image](/images
+![PCA RES](/Images/output_24_0.png)
