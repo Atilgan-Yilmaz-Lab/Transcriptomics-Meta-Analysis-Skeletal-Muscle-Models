@@ -98,20 +98,20 @@ corrplot(cor_matrix, method = "color", type = "upper",
          tl.col = "black", tl.srt = 45,
          addCoef.col = "black", number.cex = 0.7)
 ```  
-![png](output_15_0.png)
+![png](Images/Corr/output_15_0.png)
     
 ```R
 corrplot(cor_matrix, method = "color", order = "hclust", addCoef.col = "black")
 
 ``` 
-![png](output_16_0.png)
+![png](Images/Corr/output_16_0.png)
     
 ```R
 corrplot(cor_matrix, method = "color", order="hclust", type = "upper", 
          tl.col = "black", tl.srt = 45,
          addCoef.col = "black", number.cex = 0.7)
 ```   
-![png](output_17_0.png)
+![png](Images/Corr/output_17_0.png)
     
 ```R
 pdf("/staging/leuven/stg_00134/Margaux/corrplotSPW.pdf", width = 7, height = 7)
@@ -127,22 +127,21 @@ p.mat <- cor_pmat(mediancpm)
 ggcorrplot(corr)
 ```
   
-![png](output_22_0.png)
-
+![png](Images/Corr/output_22_0.png)
 ```R
 ggcorrplot(corr, hc.order = TRUE, outline.col = "white")
 ```    
-![png](output_23_0.png)
-    
+![png](Images/Corr/output_23_0.png)
+
 ```R
 ggcorrplot(corr, hc.order = TRUE, outline.col = "white", lab = TRUE)
 ```    
-![png](output_25_0.png)
-    
+![png](Images/Corr/output_25_0.png)
+
 ```R
 ggcorrplot(corr, hc.order = TRUE, type = "lower", lab = TRUE)
 ```   
-![png](output_27_0.png)
+![png](Images/Corr/output_27_0.png)
     
 ```R
 mean <- cpmALLsamples.df %>%
@@ -176,7 +175,7 @@ corr <- round(cor(meancpm), 2)
 ggcorrplot(corr, hc.order = TRUE, outline.col = "white")
 ```
     
-![png](output_33_0.png)
+![png](Images/Corr/output_33_0.png)
     
 
 ```R
@@ -217,7 +216,7 @@ corr <- round(cor(mediancpm), 2)
 
 ggcorrplot(corr, hc.order = TRUE, outline.col = "white", lab = TRUE)
 ``` 
-![png](output_40_0.png)
+![png](Images/Corr/output_40_0.png)
     
 ```R
 subset4 <- cpmALLsamples.df %>%
@@ -235,7 +234,7 @@ corr <- round(cor(mediancpm), 2)
 ggcorrplot(corr, hc.order = TRUE, outline.col = "white", lab = TRUE)
 ```
     
-![png](output_44_0.png)
+![png](Images/Corr/output_44_0.png)
   
 ```R
 F_arm_upperlimb_cols <- c("62F_FSM19","62F_FSM10","62F_FSM12","62F_FSM21","62F_FSM20","62F_FSM17","62F_FSM13","62F_FSM11","62F_FSM15","62F_FSM35","62F_FSM16","62F_FSM18","62F_FSM14")
@@ -259,6 +258,6 @@ mediancpm <- column_to_rownames(subset5, var="geneID")
 corr <- round(cor(mediancpm), 2)
 ggcorrplot(corr, hc.order = TRUE, outline.col = "white", lab = TRUE)
 ``` 
-![png](output_49_0.png)
+![png](Images/Corr/output_49_0.png)
     
 
