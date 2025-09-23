@@ -68,8 +68,7 @@ distance <- dist(t(log2.cpm_MT1.filt.norm), method = "euclidean")
 clusters <- hclust(distance, method = "average")
 plot(clusters, labels=samplelabels1, cex = 0.6)
 ```
-    
-![png](output_12_0.png)
+![Hierarchical cluster](/Images/PVCA/output_12_0.png)   
     
 ```R
 #Principal component analysis of cpm filtered
@@ -98,9 +97,7 @@ ggplot(pca.res.df) +
   coord_fixed() +
   theme_classic()
 ```
-    
-![png](output_15_0.png)
-    
+![Hierarchical cluster](/Images/PVCA/output_15_0.png) 
 
 ```R
 D_PCA <- ggplot(pca.res.df) +
@@ -117,7 +114,7 @@ D_PCA <- ggplot(pca.res.df) +
 D_PCA
 ```
     
-![png](output_17_0.png)
+![Hierarchical cluster](/Images/PVCA/output_17_0.png) 
     
 
 ```R
@@ -144,7 +141,7 @@ PCvar <- ggplot(pca.pivot) +
 PCvar
 ```
     
-![png](output_19_0.png)
+![Hierarchical cluster](/Images/PVCA/output_19_0.png) 
     
 
 ```R
@@ -186,6 +183,4 @@ PVCAplot <- plotVarPart(vp)
 
 PVCAplot
 ```
-    
-![png](output_33_0.png)
-    
+![Hierarchical cluster](/Images/PVCA/output_33_0.png) 
